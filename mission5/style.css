@@ -1,0 +1,228 @@
+/* Reset des marges et padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+}
+nav > ul > li {
+    position: relative; 
+    float: left;
+
+}
+
+nav > ul > li > a {
+    display: inline-block; 
+    text-decoration: none; 
+    padding: 15px 20px;
+    color: white;
+}
+
+.menue:hover{
+    background-color: #444; 
+    border-top: 3px solid rgba(228, 77, 38, 0.15)
+}
+label{
+    display: none;
+}
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav > ul > li > ul {
+    display: none; 
+    position: absolute; 
+    left: top;
+    left: 0;
+    z-index: 1000;
+    background-color: #555;
+    padding: 0;
+    border: 1px solid #b6b6b6;
+
+}
+nav > ul > li:hover > ul {
+    display: block; 
+}
+
+nav > ul > li > ul > li {
+    width: 200px; 
+}
+
+nav > ul > li > ul > li > a {
+    display: block; 
+    padding: 10px ;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, font-weight 0.3s;
+}
+
+nav > ul > li > ul > li:hover > a {
+    background-color: #666; 
+    font-weight: bold; 
+    padding: 15px 30px 20px 30px;
+}
+.submenue1 li:hover a {
+    color: pink;
+    font-weight: bold;
+}
+#menue1:hover{
+    background-color: rgb(219, 198, 202);
+}
+.menue .submenue1 li{
+    background-color: pink;
+}
+.submenue2 li:hover a {
+    color: rgb(190, 240, 221);
+    font-weight: bold;
+}
+#menue2 :hover{
+    background-color: rgb(217, 240, 231);
+}
+.menue .submenue2 li{
+    background-color: rgb(190, 240, 221);
+}
+.submenue3 li:hover a {
+    color: rgb(148, 178, 212);
+    font-weight: bold;
+}
+#menue3:hover{
+    background-color: rgb(173, 188, 206);
+}
+.menue .submenue3 li{
+    background-color: rgb(148, 178, 212);
+}
+.submenue4 li:hover a {
+    color: rgb(255, 119, 119);
+    font-weight: bold;
+}
+#menue4:hover{
+    background-color: rgb(201, 169, 169);
+}
+.menue .submenue4 li{
+    background-color: rgb(255, 119, 119);
+}
+
+nav > input[type="checkbox"] :checked ~ul {
+    display: block;
+}
+
+
+
+@media (max-width: 680px) {
+    label {
+        display: block; 
+        background-color: #444; 
+        color: white; 
+        text-align: center;
+        padding: 12px 0;
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    nav > ul {
+        display: flex; 
+        flex-direction: column; 
+        width: 100%; 
+        height: auto; 
+        box-sizing: border-box; 
+    }
+
+    nav > ul > li {
+        width: 100%; 
+    }
+
+    nav > ul > li > a {
+        display: block; 
+        width: 100%; 
+        padding: 15px; 
+        text-align: left; 
+        color: white; 
+        box-sizing: border-box; 
+    }
+
+
+
+    nav > ul > li > ul {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #555; 
+        position: relative; 
+        box-sizing: border-box; 
+    }
+
+    nav > ul > li:hover > ul {
+        display: flex; 
+    }
+
+    nav > ul > li > ul > li {
+        width: 100%; 
+    }
+
+    nav > ul > li > ul > li > a {
+        padding: 10px;
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .submenue1 li:hover >  {
+        color: pink;
+        font-weight: bold;
+    }
+    #menue1:hover {
+        background-color: rgb(219, 198, 202);
+    }
+    .menue .submenue1 li {
+        background-color: pink;
+    }
+
+    .submenue2 li:hover >  {
+        color: rgb(190, 240, 221);
+        font-weight: bold;
+    }
+    #menue2:hover {
+        background-color: rgb(217, 240, 231);
+    }
+    .menue .submenue2 li {
+        background-color: rgb(190, 240, 221);
+    }
+
+    .submenue3 li:hover >  {
+        color: rgb(148, 178, 212);
+        font-weight: bold;
+    }
+    #menue3:hover {
+        background-color: rgb(173, 188, 206);
+    }
+    .menue .submenue3 li {
+        background-color: rgb(148, 178, 212);
+    }
+
+    .submenue4 li:hover >  {
+        color: rgb(255, 119, 119);
+        font-weight: bold;
+    }
+    #menue4:hover {
+        background-color: rgb(201, 169, 169);
+    }
+    .menue .submenue4 li {
+        background-color: rgb(255, 119, 119);
+    }
+}

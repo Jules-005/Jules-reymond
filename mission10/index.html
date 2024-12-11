@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp js2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="tout">
+        <footer>
+            <div class="gauchefooter">
+                <h4>Laboratoire GSB</h4>
+                <p>7 avenue de l'amour</p>
+                <p>Facturation de l'application de passation de commande</p>
+            </div>
+            <div class="droitefooter">
+                <h2>Facture</h2>
+                <p>Date : 26/01/2023</p>
+                <p>Numéro Facture : 91.13.69</p>
+            </div>
+        </footer>
+        <center>
+        <div>
+            <p>Paiement à régler avant le 25 décembre</p>
+        </div>
+    </center>
+        <div class="details">
+            <div class="destinataire">
+                <h4><strong>Destinataire</strong></h4>
+                <hr>
+                <p>
+                    REYMOND <br>
+                    Laboratoire GSB <br>
+                    7 avenue de l'amour <br>
+                    01 02 03 04 05 <br>
+                    laboratoire.gsb@gmail.com
+                </p>
+            </div>
+
+            <div class="Envoyer">
+                <h4><strong>Envoyer à</strong></h4>
+                <hr>
+                <p>
+                    BAYU <br>
+                    BDD.company <br>
+                    15 avenue à Massy <br>
+                    09 08 07 06 05 <br>
+                    BDD.company@gmail.com
+                </p>
+            </div>
+        </div>
+        <center>
+            <div>
+                <p>Paiement réglable en 2 fois possible, virement fait directement au compte de la sociétée: "Num ***********"</p>
+            </div>
+        </center>
+        <center>
+            <table height="100px" width="600px">
+                <tr class="premierligne">
+                    <td><div class="t0"><h3>Description :</h3></div></td>
+                    <td><div class="t0"><h3>Quantité :</h3></div></td>
+                    <td><div class="t0"><h3>Prix unitaire :</h3></div></td>
+                    <td><div class="t0"><h3>Total :</h3></div></td>
+                </tr>
+                <tr class="row">
+                    <td><input class="t" placeholder="Nom" type="text" name="t4" id="t4"></td>
+                    <td><input class="t" placeholder="Quantité" type="number" name="t1" id="t1"></td>
+                    <td><input class="t" placeholder="Prix unitaire" type="number" name="t2" id="t2"></td>
+                    <td><input class="t34" type="text" name="t3" id="t3" readonly="readonly"></td>
+                </tr>
+                <tr class="row" id="modeleLigne">
+                    <td><input class="t" placeholder="Nom" type="text" name="t4" id="t4"></td>
+                    <td><input class="t" placeholder="Quantité" type="number" name="t1" id="t1"></td>
+                    <td><input class="t" placeholder="Prix unitaire" type="number" name="t2" id="t2"></td>
+                    <td><input class="t34" type="text" name="t3" id="t3" readonly="readonly"></td>
+                </tr>
+                <tr class="row lastrow" id="lastLigne"> 
+                    <td><input class="t" placeholder="Nom" type="text" name="t4" id="t4"></td>
+                    <td><input class="t" placeholder="Quantité" type="number" name="t1" id="t1"></td>
+                    <td><input class="t" placeholder="Prix unitaire" type="number" name="t2" id="t2"></td>
+                    <td><input class="t34" type="text" name="t3" id="t3" readonly="readonly"></td>
+                </tr>
+            </table>
+        </center>
+
+        <div class="calculmath">
+            <table>
+                <tr><td><h5>Sous Total</h5></td><td><input class="t34" type="text" id="t13" readonly></td></tr>
+                <tr><td><h5>Remises</h5></td><td><input placeholder="10 tout les 100" class="t34" type="text" id="t14" readonly></td></tr>
+                <tr><td><h5>Sous Total moins les remises</h5></td><td><input  class="t34" type="text" id="t15" readonly></td></tr>
+                <tr><td><h5>Taux d'imposition</h5></td><td><input placeholder="20%"class="t34" type="text" id="t16" readonly></td></tr>
+                <tr><td><h5>Taxe totale</h5></td><td><input class="t34" type="text" id="t17" readonly></td></tr>
+                <tr><td><h5>Expédition</h5></td><td><input placeholder="5" class="t34" type="text" id="t18" readonly></td></tr>
+                <tr><td><h5>Solde total</h5></td><td><input class="t34" type="text" id="t19" readonly></td></tr>
+            </table>
+        </div>
+
+        <button onclick="calculer()">Calculer</button>
+        <button onclick="ajout()">Ajouter une ligne</button>
+        <button onclick="annuler()">Annuler</button>
+
+        <div class="menu"><a href="../index.html">Retour au menu</a></div>
+    </div>
+</body>
+</html>

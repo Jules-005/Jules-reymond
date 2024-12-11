@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif; /* Police de caractère */
+}
+
+.carte {
+    width: 300px; /* Largeur de la carte */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Couleur de fond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+    padding: 20px; /* Espacement intérieur */
+    margin: 50px auto; /* Centre la carte */
+    text-align: center; /* Centre le texte */
+}
+
+.carte2 h2 {
+    margin: 0; /* Supprime les marges */
+    font-size: 1.5em; /* Taille de la police */
+}
+
+.carte2 h3 {
+    margin: 5px 0; /* Espacement */
+    font-size: 1.2em; /* Taille de la police */
+    color: #555; /* Couleur du texte */
+}
+
+.social-links p {
+    margin: 5px 0; /* Espacement entre les liens */
+}
+
+.social-links a {
+    color: #0073e6; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}

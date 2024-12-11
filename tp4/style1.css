@@ -1,0 +1,24 @@
+.block1{
+    background-color: rgb(238, 161, 231);
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+body{
+    background-color: aquamarine;   
+}
+.block2{
+    margin-left: 20px;
+    height: 200px;
+    width: 150px;
+    background-color: rgb(73, 224, 230);
+    float: right;
+}
+.block3{
+    margin-left: 20px;
+    height: 100px;
+    width: 150px;
+    background-color: chocolate;
+    clear: both;
+}

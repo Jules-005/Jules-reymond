@@ -1,0 +1,43 @@
+
+.entete{
+    background-color: rgb(174, 188, 194);
+    float: left;
+    height: 70px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.block1{
+    background-color: rgb(238, 161, 231);
+    float: left;
+    height: 300px;
+    width: 30%;
+    margin: 10px;
+    margin-top: 2%;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+.piedpage{
+ background-color: rgb(161, 216, 238);
+    float: left;
+    height: 70px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+
+}
+
+.block5{
+    margin: 10px;
+    height: 50px;
+    width: 95%;
+    border: 2px solid #000000;
+    background-color: azure;
+}

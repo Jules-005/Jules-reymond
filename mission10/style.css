@@ -1,0 +1,135 @@
+/* CSS aider avec chat gpt */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    padding-top: 40px; 
+    min-height: 100vh; 
+    font-size: 16px;
+    background-color: #787879;
+
+}
+
+.tout{
+    border: 5px solid #a7a7a7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #004085;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer .gauchefooter,
+footer .droitefooter {
+    width: 45%;
+}
+
+footer h4,
+footer h2 {
+    margin: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+div.destinataire,
+div.Envoyer {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.destinataire hr,
+div.Envoyer hr {
+    margin: 5px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table tr.premierligne {
+    background-color: #004085;
+    color: white;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table tr.row:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table tr.row:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.calculmath table {
+    width: 55%;
+    margin: 20px auto;
+}
+
+.calculmath table td {
+    padding: 5px 10px;
+}
+
+.calculmath input {
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #004085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.menu {
+    margin: 20px;
+    text-align: center;
+}
+
+.menu a {
+    color: #004085;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Mission 8</h1>
+        <p>Choisissez un exercice et testez le code !</p>
+    </header>
+
+    <main>
+        <section class="exercices-list">
+            <h2>Liste des Exercices</h2>
+            <ul id="exercices"></ul>
+        </section>
+        <section id="jeu-des" style="display: none;" class="exercice-detail">
+            <h2>Jeu de Lancer de dés</h2>
+            <p>Prédisez si le prochain lancer sera plus grand ou plus petit que le précédent.</p>
+            <input type="text" id="prediction" placeholder="plus grand ou plus petit" />
+            <button id="lancer-btn">Lancer le dé</button>
+            <p id="resultat-jeu-des"></p></p> 
+        </section>
+        
+        
+        
+        
+        <section id="exercice-detail" class="exercice-detail">
+            <h2 id="titre-exercice"></h2>
+            <p id="description-exercice"></p>
+            <div id="demo-container" style="display: none;">
+                <div id="input-container"></div>
+                <button id="run-demo">Tester</button>
+                <p id="resultat"></p>
+            </div>
+ 
+<h3>Pour voir le code;</h3><br>
+            <button id="solution-btn">Voir la solution</button>
+            <pre id="solution-code"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jules Reymond JavaScript Mission 8</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

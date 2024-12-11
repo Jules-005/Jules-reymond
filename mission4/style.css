@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    padding-top: 40px; 
+    min-height: 100vh; 
+    font-size: 16px;
+    background-color: #787879;
+}
+.blockgeneral{
+    border: 5px solid #3388CC;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #d3d3d3;
+}
+.block {
+    border: 2px solid #3388CC; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;; 
+    margin-top: 2%;
+    width: 780px;
+    margin: auto;
+    margin: 70px 0; 
+    padding: 20px; 
+}
+.div1 {
+    width: auto;  
+    height: auto; 
+    margin-right: 10px;
+    margin-left: 7%;
+    
+}
+.div2 {
+    flex-grow: 1;
+    height: auto; 
+    max-width: 800px;
+}
+.div3 {
+    height: auto;
+    max-width: 400;
+    margin-left: 50%
+}
+
+
+h1, h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.retour{
+    cursor: pointer;
+    text-align: center;
+    margin: 50px auto ;
+    padding: 10px; 
+    border: 2px solid #555b61; 
+    border-radius: 5px;
+    width: 10%;
+    transition: background-color 0.3s;
+}
+.retour:hover{
+    background-color: rgb(255, 255, 255);
+}
+a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+@media screen and (max-width: 768px) {
+
+    .block{
+        width: 100%;
+        width: 710px;
+        height: auto;
+    }
+}

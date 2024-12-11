@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form action="#" method="post">
+    <table width="70%" height="200">
+    <tr> <td> <label for="pseudo">Pseudo* :</label> </td> <td> <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo" required> </td> </tr>
+    <tr> <td> <label for="password">Mot de passe :</label> </td> <td> <input type="password" name="t2" placeholder="Entrez votre password" required> </td> </tr>
+    <tr> <td> <label for="prenom">Prénom :</label> </td> <td> <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required> </td> </tr>
+    <tr> <td> <label for="email">E-mail :</label> </td> <td> <input type="email" id="email" name="email" placeholder="Entrez votre E-mail" required>  </td> </tr>
+    <tr> <td> <label for="fichier">Avatar :</label> </td> <td>  <input type="file" id="fichier" name="fichier" placeholder="Entrez votre E-mail" required> </td> </tr>
+    <tr> <td> <label for="pays">Pays :</label> </td> <td> <select id="pays" name="pays" required>
+        <option value="">-- Choisissez un pays --</option>
+        <option value="france">France</option>
+        <option value="belgique">Belgique</option>
+        <option value="luxembourg">Luxembourg</option>
+        <option value="suisse">Suisse</option>
+        <option value="allemagne">Allemagne</option>
+        <option value="espagne">Espagne</option>
+        <option value="italie">Italie</option>
+        <option value="autre">autre</option>
+    </select> </td> </tr>
+    <tr> <td> <label for="fruit">Quelles sont vos fruits préférés? </label> </td> <td> <label><input type="radio" name="fruit" value="orange" required>Orange</label><label><input type="radio" name="fruit" value="fraise">Fraise</label> <label><input type="radio" name="fruit" value="poire">Poire</label></td> </tr>
+    <tr> <td> <label for="cicilite">Civilité : </label> </td> <td> <label><input type="radio" name="civilite" value="homme" required>Homme</label> <label><input type="radio" name="civilite" value="femme">Femme</label> </td> </tr>
+    <tr> <td> <label for="ville">Ville :</label> </td> <td> <input type="text" id="ville" name="ville" placeholder="Entrez votre Ville" required>  </td> </tr>
+    <tr> <td> <label for="cdp">Code Postale :</label> </td> <td> <input type="text" id="cdp" name="cdp" placeholder="Entrez votre Code Postale" required> </td> </tr>
+    <tr> <td> <label for="cicilite">Adresse:</label> </td> <td> <textarea rows="5" cols="50" placeholder="Entrez votre Adresse"></textarea></textarea> </td> </tr>
+    <tr> <td> <label for="naissance">Date de naissance :</label> </td> <td> <input type="date" id="naissance" name="naissance" required> </td> </tr>
+    <tr> <td> <label for="jauge">Jauge :</label> </td> <td>  <input type="range" id="niveau" name="niveau" min="0" max="100" value="50" class="jauge" ></td> </tr>
+    <tr> <td> <label for="tel">Télephone :</label> </td> <td> <input type="text" id="tel" name="tel" placeholder="Numéro de Télephone" required> </td> </tr>
+    <tr> <td> <label for="recherche">Recherche :</label> </td> <td> <input type="text" id="recherche" name="recherche" required> </td> </tr>
+    <tr> <td> <label for="url">Url :</label> </td> <td> <input type="text" id="url" name="url" required> </td> </tr>
+    <tr> <td> <label for="couleur">Couleur :</label> </td> <td> <input type="color" id="couleur" name="couleur" value="#ff0000"> </td> </tr>
+</table> <br>
+<input type="submit" value="Valider"> <br> 
+<a href="./index.html">Retour au Sommaire</a>
+</form>
+</body>
