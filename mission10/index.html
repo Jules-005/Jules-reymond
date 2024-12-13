@@ -87,15 +87,16 @@
 
         <div class="calculmath">
             <table>
-                <tr><td><h5>Sous Total</h5></td><td><input class="t34" type="text" id="t13" readonly></td></tr>
-                <tr><td><h5>Remises</h5></td><td><input placeholder="10 tout les 100" class="t34" type="text" id="t14" readonly></td></tr>
-                <tr><td><h5>Sous Total moins les remises</h5></td><td><input  class="t34" type="text" id="t15" readonly></td></tr>
-                <tr><td><h5>Taux d'imposition</h5></td><td><input placeholder="20%"class="t34" type="text" id="t16" readonly></td></tr>
+                <tr><td><h5>Sous Total</h5></td><td><input class="t34" type="number" id="t13" readonly></td></tr>
+                <tr><td><h5>Remises (%)</h5></td><td><input placeholder="*** tout les 100e" class="t34" type="number" id="t14" oninput="calculer()"></td></tr>
+                <tr><td><h5>Sous Total moins les remises</h5></td><td><input class="t34" type="text" id="t15" readonly></td></tr>
+                <tr><td><h5>Taux d'imposition (%)</h5></td><td><input class="t34" type="number" id="t16" oninput="calculer()"></td></tr>
                 <tr><td><h5>Taxe totale</h5></td><td><input class="t34" type="text" id="t17" readonly></td></tr>
-                <tr><td><h5>Expédition</h5></td><td><input placeholder="5" class="t34" type="text" id="t18" readonly></td></tr>
+                <tr><td><h5>Expédition</h5></td><td><input class="t34" type="number" id="t18" oninput="calculer()"></td></tr>
                 <tr><td><h5>Solde total</h5></td><td><input class="t34" type="text" id="t19" readonly></td></tr>
             </table>
         </div>
+        
 
         <button onclick="calculer()">Calculer</button>
         <button onclick="ajout()">Ajouter une ligne</button>

@@ -21,25 +21,26 @@ function calculer() {
 // Puis son calcul plutot simple 
     document.getElementById("t13").value = subtotal;
 
-// une remise de 10 tout les 100 de valeur
-    var remisePourcentage = 10; 
-    var remiseMontant = (subtotal * remisePourcentage) / 100;
-    document.getElementById("t14").value = remiseMontant;
+// une remise de **** tout les 100 de valeur
+var remisePourcentage = parseFloat(document.getElementById("t14").value) || 0;
+var remiseMontant = (subtotal * remisePourcentage) / 100;
+document.getElementById("t14").value = remisePourcentage;
 
-    var subtotalAfterDiscount = subtotal - remiseMontant;
-    document.getElementById("t15").value = subtotalAfterDiscount;
+var subtotalAfterDiscount = subtotal - remiseMontant;
+document.getElementById("t15").value = subtotalAfterDiscount;
 
- // une taxe de 20%, la classique
-    var taxePourcentage = 20; 
-    var taxeTotale = (subtotalAfterDiscount * taxePourcentage) / 100;
-    document.getElementById("t17").value = taxeTotale;
+// Récupérer et calculer la taxe
+var taxePourcentage = parseFloat(document.getElementById("t16").value) || 0; 
+var taxeTotale = (subtotalAfterDiscount * taxePourcentage) / 100;
+document.getElementById("t17").value = taxeTotale;
+ 
 
- // des petits frais et pas des petits petit suisse
-    var fraisExpedition = 5.00; 
-    document.getElementById("t18").value = fraisExpedition;
+// Récupérer les frais d'expédition
+var fraisExpedition = parseFloat(document.getElementById("t18").value) || 0; 
+document.getElementById("t18").value = fraisExpedition;
 
-    var soldeTotal = subtotalAfterDiscount + taxeTotale + fraisExpedition;
-    document.getElementById("t19").value = soldeTotal;
+var soldeTotal = subtotalAfterDiscount + taxeTotale + fraisExpedition;
+document.getElementById("t19").value = soldeTotal;
 }
 
 // Annule tout les textes de la page avec input donc tout les calculs

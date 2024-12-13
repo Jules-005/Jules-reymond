@@ -1,0 +1,79 @@
+/* CSS aider avec chat gpt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+div {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    width: 50%;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.bonne {
+    color: rgb(110, 224, 129); 
+}
+.encadrer{
+    margin: 50px auto ;
+    padding: 10px; 
+    border: 2px solid rgb(155, 153, 153); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 8%;
+    height: 5%;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
